@@ -33,7 +33,7 @@ st.write("Beantwoord de onderstaande vragen:")
 for i, row in df.iterrows():
     antwoord = st.radio(
         f"{int(row['# vraag'])}. {row['vraag']}  -  Thema: {row['thema']}",
-**Thema:** {row['thema']}",
+f"{int(row['# vraag'])}. {row['vraag']}  -  Thema: {row['thema']}",
         options=[5, 4, 3, 2, 1],
         format_func=lambda x: {
             5: "Helemaal mee eens",
